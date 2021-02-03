@@ -1,0 +1,826 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background: #16826E;
+    color: white;
+    width: auto;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    overflow: hidden;
+}
+
+iframe
+{
+    display: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.footer
+{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header
+{
+    grid-column: 1/2;
+    background: white;
+    height: 139px;
+    padding-left: 60px;
+    padding-top: 15px;
+    display: block;
+}
+
+.shadow
+{
+    grid-column: 1/5;
+    height: 10px;
+    background: white;
+    box-shadow: 0 10px 10px  #06241e ;
+}
+
+.logo
+{
+   display: block;
+   position: static;
+}
+
+
+
+
+
+
+
+
+
+
+
+#btn-menu
+{
+    display: none;
+}
+
+section label
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+section label:hover
+{
+    cursor: pointer;
+    background: #28a38d;
+    height: 30px;
+    
+}
+
+
+
+.menu-principal ul 
+{
+    list-style: none;
+    display: flex;
+    background: #16826E; 
+    border-radius: 4px;
+    padding: 0;
+}
+
+.menu-principal ul li{    
+    height: 40px;
+    padding-bottom: 1.1%;
+}
+
+.menu-principal ul li a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+
+.menu-principal .item .desplegable
+{
+    display: block;
+    transform: translateX(-30%);
+    opacity: 0%;
+    transition: all 0.6s;
+    margin-top: 1%;
+    
+}
+
+div nav ul ul li
+{
+    background: #EE741F;    
+    border: 1px solid white;
+}
+
+nav .item:hover .desplegable
+{
+    opacity: 1;
+    transform: translateX(0%);
+} 
+.menu-principal ul li:hover .border
+{    
+    background: #28a38d;
+    height: 0.6vw;    
+}
+nav ul ul li:hover a
+{
+    background: black;
+    height: 5%;
+}
+
+
+.menu-principal
+{
+    background: white;
+    grid-column: 2/5;
+    height: 104px;
+    padding-left: 25%;
+    padding-top: 50px;
+    padding-left: 10px;
+    
+}
+.menu
+{
+    padding-left: 20vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video
+{
+    grid-column: 1/3;
+}
+
+.video
+{
+    padding: 9vw 0px 70px 3vw;
+    
+}
+video
+{
+    width: 42vw;
+    height: auto;
+    box-shadow: 5px 10px 10px 0 #000000;
+}
+
+.intro-texto
+{
+    color: white; 
+    padding: 17.5vw 20vw 8.5vw 3.14vw;   
+}
+.main
+{
+    grid-column: 3/5;
+}
+
+
+main div article header h1
+{
+    font-size: 3.2vw;
+    
+}
+main div article header p
+{
+    font-size: 1.25vw;
+}
+
+
+.intro-texto article header h1
+{
+    margin-bottom: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-unidades div a img
+{
+    opacity: 99%;
+    box-shadow: 0 5px 12px 0 #06241e;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedor-unidades div a:hover img
+{
+    box-shadow: 0px 10px 22px 0 #000000;
+    border-radius: 50%;  
+}
+
+.unidad-nombre
+{
+    opacity: 0;
+    color: white;
+    background: #EE741F;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    font-size: 3vw;
+    transform: translateY(-20%);
+    transition: all 0.6s;
+    margin-top: 2vw;
+    box-shadow: 0 5px 12px 0 #06241e;
+}
+
+
+.contenedor-unidades div a:hover h1
+{
+    opacity: 100%;
+    transform: translateY(0);
+
+}
+.unidadp-todo p
+{
+    padding-top: 30px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.unidadp-1, .unidadp-2
+{
+    grid-column: 1/5;
+    text-align: center;
+    display: flex;
+    padding: 10%; 
+    gap: 10%;   
+}
+
+
+
+
+
+
+
+
+.footer
+{
+    margin-top: 30%;
+    background: #EE741F;
+    height: 200px;
+}
+.footer nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.contacto
+{
+    text-align: left;
+    grid-column: 1/2;
+    padding: 15%;
+}
+
+.leyes
+{
+    grid-column: 2/4;
+    line-height: 1.5em;
+    padding-left: 50%;
+    padding-top: 5.7vw;
+}
+
+.mision-vision
+{
+    grid-column: 4/5;
+    padding-top: 6vw;
+    line-height: 1.3em;
+}
+
+ul
+{
+    list-style: none;
+}
+
+footer div nav ul li:hover a
+{
+    color: rgb(197, 197, 197);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px)
+{
+
+    
+    nav ul li a
+    {
+        font-size: auto;
+
+    }
+    .menu-principal ul 
+    {
+        gap: 0.2%;
+        
+    }
+
+    .menu-principal ul li{    
+        margin: auto;
+        
+    }
+
+    
+    .menu
+    {
+        padding-left: 9vw;
+    }
+
+    .intro-texto
+    {
+        color: white; 
+        padding: 17.6vw 0 0 0;   
+        
+    }
+
+   
+    main div article header p
+    {
+        padding: 4vw;
+        font-size: 1.76vw;
+    }
+    .intro-texto article header h1
+    {
+        margin-bottom: 2px;
+        margin-left: 4vw;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:930px)
+{
+    nav ul li a
+    {
+        font-size: 15px;
+    }
+
+    section label
+    {
+        display: block;
+    }
+
+    .menu
+    {
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        padding: 0;
+    }
+
+    .menu-principal
+    {
+        height: 49px;
+        padding: 0;
+    }
+    .shadow
+    {
+        display: none;
+    }
+
+    .menu ul 
+    {
+        display: block;
+
+    }
+
+    .menu-principal ul 
+    {
+        gap: 0.01%;
+        border-radius: 0;
+    }
+
+    .menu-principal ul li
+    {    
+        margin: auto;
+        border-top: 1px solid white;
+    }
+
+    .menu-principal ul li:hover .border {
+        height: 1.1vw;    
+    }
+
+    #btn-menu:checked ~ .menu    
+    {
+        margin: 0;
+    }
+
+
+
+
+    .header
+    {
+        grid-column: 1/5;
+        padding: 0;
+        display: none;                
+    }
+
+    header img
+    {
+        margin: auto;
+        padding-top: 20px;
+        
+    }
+
+
+
+
+
+    .video
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 55vw;
+    }
+    
+    video
+    {
+        display: none;
+        
+    }
+
+    iframe
+    {
+        display: block;
+        width: 100%;
+        height: 55vw;
+        
+    }
+   
+
+
+
+    
+
+  
+    main div article header p
+    {
+        padding: 4vw;
+        font-size: 20px;
+    }
+    .intro-texto article header h1
+    {
+        margin-bottom: 2px;
+        font-size: 29px;
+        margin-left: 4vw;
+    }
+
+
+
+
+
+
+
+
+
+    .menu-principal
+    {
+        grid-column: 1/5;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    
+    .video
+    {
+        grid-column: 1/5;
+    }
+    .main
+    {
+        grid-column: 1/5;
+    }
+
+
+
+
+
+
+
+
+    .texto-unidad-1
+    {
+        grid-column: 2/5;
+        margin-top: 20px;
+
+    }
+
+
+    .unidadp-1, .unidadp-2 
+    {
+        display: block;
+        padding: 0;
+        max-width: 100%;
+        margin-left: 5%;
+        grid-column: 1/5;
+    }
+    .unidadp-1 img
+    {
+        margin-top: 4vw;
+    }
+    .unidadp-2  img
+    {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .item-borrar
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    section div a:hover h1
+    {
+        opacity: 100%;
+        transform: translateY(0);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .unidad-nombre
+    {
+        display: none;
+    }
+
+    .unidadp-todo
+    {
+        grid-column: 1/5;
+        display: flex;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    .unidadp-todo img
+    {
+        width: 60%;
+        height: 60%;
+        margin: 0;
+    }
+    .unidadp-todo p
+    {
+        padding-top: 4vw;
+        display: block;
+        font-size: 20px;
+
+    }
+    
+
+    .mision-vision
+    {
+        padding-left: 21%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px)
+{
+    main div article header p
+    {
+        padding: 4vw;
+        font-size: 19px;
+    }
+    .intro-texto article header h1
+    {
+        font-size: 30px;
+        margin-left: 4vw;
+    }
+
+    .unidadp-todo img
+    {
+        width: 55%;
+        height: 55%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .unidadp-todo p
+    {
+        padding-top: 0.5vw;
+        display: block;
+        font-size: 2.6vw;
+        padding-right: 11px;
+
+    }
+
+
+    .contacto, .leyes, .mision-vision
+    {
+        grid-column: 1/5;
+        padding: 0;
+        margin: 10px 10px 20px ;
+        font-size: 30px;
+    }
+
+    .footer
+    {
+        height: auto;
+    }
+    footer li
+    {
+        margin: 0;
+        padding: 0;
+        line-height: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px)
+{
+    
+    nav ul li a
+    {
+        font-size: 12px;
+    }
+
+
+    main div article header p
+    {
+        padding: 4vw;
+        font-size: 12px;
+    }
+    .intro-texto article header h1
+    {
+        margin-bottom: 2px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-left: 4vw;
+    }
+
+    .unidadp-todo p
+    {
+        display: none;
+    }
+
+    .unidad-nombre
+    {
+        display: block;
+        opacity: 100;
+        font-size: 10vw;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+
+}

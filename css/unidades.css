@@ -1,0 +1,956 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background: #16826E;
+    color: white;
+    width: auto;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    overflow: hidden;
+    
+}
+.container2
+{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,auto);
+    overflow: hidden;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.header
+{
+    grid-column: 1/2;
+    background: white;
+    height: 139px;
+    padding-left: 60px;
+    padding-top: 15px;
+    display: block;
+}
+
+.shadow
+{
+    grid-column: 1/5;
+    height: 10px;
+    background: white;
+    box-shadow: 0 10px 10px  #06241e ;
+}
+
+.logo
+{
+   display: block;
+   position: static;
+}
+
+
+
+#btn-menu
+{
+    display: none;
+}
+
+section label
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+section label:hover
+{
+    cursor: pointer;
+    background: #28a38d;
+    height: 30px;
+    
+}
+
+
+
+.menu-principal ul 
+{
+    list-style: none;
+    display: flex;
+    background: #16826E; 
+    border-radius: 4px;
+    padding: 0;
+}
+
+.menu-principal ul li{    
+    height: 40px;
+    padding-bottom: 1.1%;
+}
+
+.menu-principal ul li a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+
+.menu-principal .item .desplegable
+{
+    display: block;
+    transform: translateX(-30%);
+    opacity: 0%;
+    transition: all 0.6s;
+    margin-top: 1%;
+    
+}
+
+div nav ul ul li
+{
+    background: #EE741F;    
+    border: 1px solid white;
+}
+
+nav .item:hover .desplegable
+{
+    opacity: 1;
+    transform: translateX(0%);
+} 
+.menu-principal ul li:hover .border
+{    
+    background: #28a38d;
+    height: 0.6vw;    
+}
+nav ul ul li:hover a
+{
+    background: black;
+    height: 5%;
+}
+
+
+.menu-principal
+{
+    background: white;
+    grid-column: 2/5;
+    height: 104px;
+    padding-left: 25%;
+    padding-top: 50px;
+    padding-left: 10px;
+    
+}
+.menu
+{
+    padding-left: 20vw;
+}
+
+
+
+
+.icono-unidad
+{
+    grid-column: 1/3;
+    width: auto;
+    height: auto;
+    padding-left: 20%;
+    margin-top: 300px;
+}
+.icono-unidad img
+{
+    width: 25.5vw;
+    height: 25.5vw;
+}
+
+
+
+.banner, .banner-porcicultura, .banner-ganaderia, .banner-ovinocultura, 
+.banner-porcicultura, .banner-piscicultura, .banner-avicultura
+{
+    grid-column: 3/5;
+    margin-top: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/equinocultura/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/equinocultura/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/equinocultura/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/equinocultura/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/equinocultura/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/equinocultura/ejemplo_5.png");
+        
+    }
+
+}
+
+.banner-ganaderia
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/ganaderia/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/ganaderia/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/ganaderia/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/ganaderia/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/ganaderia/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/ganaderia/ejemplo_5.png");
+        
+    }
+
+}
+
+
+.banner-ovinocultura
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/ovinocultura/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/ovinocultura/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/ovinocultura/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/ovinocultura/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/ovinocultura/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/ovinocultura/ejemplo_5.png");
+        
+    }
+
+}
+
+
+.banner-piscicultura
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/piscicultura/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/piscicultura/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/piscicultura/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/piscicultura/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/piscicultura/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/piscicultura/ejemplo_5.png");
+        
+    }
+
+}
+
+.banner-porcicultura
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/porcicultura/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/porcicultura/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/porcicultura/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/porcicultura/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/porcicultura/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/porcicultura/ejemplo_5.png");
+        
+    }
+
+}
+
+
+.banner-avicultura
+{
+    width: 32vw;
+    height: 23.5vw;
+    border-radius: 5%;
+    background-image: url("../img/avicultura/ejemplo_1.png");
+    background-size: 100% 100%;
+    animation: banner 20s infinite;
+    float: right;
+    margin-right: 5%;
+    border: solid 15px white;
+    margin-bottom: 25%;
+}
+
+
+
+@keyframes banner
+{
+    0%, 15% {
+        background-image: url("../img/avicultura/ejemplo_1.png");
+    }
+
+    20%, 35% {
+        background-image: url("../img/avicultura/ejemplo_2.png");    
+    }
+    40%, 55% {
+        background-image: url("../img/avicultura/ejemplo_3.png");    
+    } 
+    60%, 75% {
+        background-image: url("../img/avicultura/ejemplo_4.png");   
+    } 
+    80%, 95%{
+        background-image: url("../img/avicultura/ejemplo_5.png");
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.columna-1
+{   
+    
+    grid-column: 1/3;
+    height: auto;
+    padding-left: 40%;
+    padding-right: 10%;
+}
+.columna-2
+{
+    grid-column: 3/4;
+    height: auto;
+}
+.columna-3
+{
+    grid-column: 4/6;
+    height: auto;
+    padding-right: 40%;
+    padding-left: 10%;
+}
+
+
+.inscribirse
+{
+    grid-column: 2/5;
+    margin-top: 20%;
+}
+
+.inscribirse div
+{
+    background-color: #EE741F;
+    
+    width: 49%;
+    height: auto;
+    text-align: center;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    grid-column: 1/6;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    overflow: hidden;
+    margin-top: 30%;
+    background: #EE741F;
+    height: 200px;
+}
+
+
+
+.footer nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.contacto
+{
+    text-align: left;
+    grid-column: 1/2;
+    padding: 15%;
+}
+
+
+.leyes
+{
+    grid-column: 2/4;
+    line-height: 1.5em;
+    padding-left: 50%;
+    padding-top: 6.1vw;
+}
+
+.mision-vision
+{
+    grid-column: 4/5;
+    padding-top: 6.5vw;
+    line-height: 1.3em;
+}
+
+ul
+{
+    list-style: none;
+}
+
+footer div nav ul li:hover a
+{
+    color: rgb(197, 197, 197);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px)
+{
+
+    
+    nav ul li a
+    {
+        font-size: auto;
+
+    }
+    .menu-principal ul 
+    {
+        gap: 0.2%;
+        
+    }
+
+    .menu-principal ul li{    
+        margin: auto;
+        
+    }
+
+    
+    .menu
+    {
+        padding-left: 9vw;
+    }
+
+
+ 
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:930px)
+{
+    nav ul li a
+    {
+        font-size: 15px;
+    }
+
+    section label
+    {
+        display: block;
+    }
+
+    .menu
+    {
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        padding: 0;
+    }
+
+    .menu-principal
+    {
+        height: 49px;
+        padding: 0;
+    }
+    .shadow
+    {
+        display: none;
+    }
+
+    .menu ul 
+    {
+        display: block;
+
+    }
+
+    .menu-principal ul 
+    {
+        gap: 0.01%;
+        border-radius: 0;
+    }
+
+    .menu-principal ul li
+    {    
+        margin: auto;
+        border: 1px solid white;
+        
+    }
+
+    .menu-principal ul li:hover .border {
+        height: 1.1vw;    
+    }
+
+    #btn-menu:checked ~ .menu    
+    {
+        margin: 0;
+    }
+
+
+
+
+    .header
+    {
+        grid-column: 1/5;
+        padding: 0;
+        display: none;                
+    }
+
+    header img
+    {
+        margin: auto;
+        padding-top: 20px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+    .menu-principal
+    {
+        grid-column: 1/5;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    
+
+
+
+
+
+
+    .icono-unidad
+    {
+        grid-column: 1/5;
+        width: auto;
+        height: auto;
+        padding-left: 13%;
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+    .icono-unidad img
+    {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .banner, .banner-porcicultura, .banner-ganaderia, .banner-ovinocultura, 
+    .banner-porcicultura, .banner-piscicultura, .banner-avicultura
+    {
+      display: none;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    section div a:hover h1
+    {
+        opacity: 100%;
+        transform: translateY(0);
+
+    }
+    
+
+    .mision-vision
+    {
+        padding-left: 21%;
+    }
+
+
+
+    
+    .item-borrar
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    .columna-1
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 30px;
+    }
+    .columna-2
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 30px;
+    }
+    .columna-3
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .inscribirse div 
+    {
+        font-size: 5vw;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px)
+{
+    
+    .columna-1
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 20px;
+    }
+    .columna-2
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-left: 5%;
+         font-size: 20px;
+    }
+    .columna-3
+    {
+        margin-bottom: 10%;
+        grid-column: 1/6;
+        height: auto;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 20px;
+    }
+
+    .inscribirse div 
+    {
+        font-size: 10vw;
+        width: 89%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .contacto, .leyes, .mision-vision
+    {
+        grid-column: 1/5;
+        padding: 0;
+        margin: 10px 10px 20px ;
+        font-size: 30px;
+    }
+
+    .footer
+    {
+        height: auto;
+    }
+    footer li
+    {
+        margin: 0;
+        padding: 0;
+        line-height: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px)
+{
+    nav ul li a
+    {
+        font-size: 12px;
+    }
+
+
+    .columna-1,  .columna-2, .columna-3
+    {
+       
+        font-size: 15px;
+    }
+
+
+}
